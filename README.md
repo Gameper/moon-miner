@@ -3,15 +3,7 @@
 
 Solves proof of work to mine supported ERC20 tokens.  
 
-**Different Part**
-Getting Started
-1. Build a new mining account with 'account new'
-2. View the private key with 'account list'
-3. Write down these credentials
-4. Fund the account to send mining transaction
-5. contract select {moon-miner mining contract address}
-6. config web3provider https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy:8545
-7. mine
+
 
 ### Building from Source
 
@@ -60,11 +52,17 @@ Getting Started
 
 ---------------
 
+**Different Part**
+After Setup
+
 ### Getting Started
 1. Build a new mining account with 'account new'
 2. View the private key with 'account list'
 3. Write down these credentials
-4. Mine 0xbitcoin tokens with the command 'mine'
+4. Fund the account to send mining transaction
+5. contract select 0x68e82b7a3d99465ff7bd39b8218359febd7cc65e ({moon-miner mining contract address})
+6. config web3provider https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy:8545
+7. mine
 
 Note that IF SOLO MINING it is necessary to fill the mining account (it is an Ethereum account) with a small amount of ether.  Typically 0.005 eth is good enough to get started.  The ether is used for gas to make function calls to the token smart contract when your miner finds a solution to the Proof of Work.  When the gas is spent that means that you have found a solution! If you were the first to find it, you will be rewarded with 0xbitcoin tokens.  (See the block explorer for typical gas prices at the current moment.)
 
