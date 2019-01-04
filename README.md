@@ -1,19 +1,17 @@
 
-# 0xBitcoin ERC20 Token Miner
+# Moon - Miner
 
 Solves proof of work to mine supported ERC20 tokens.  
 
-
-
-### Update 1.5.23 - 1000X CPU Pool Mining
-
-This new build uses the C++ addon to accelerate the CPU mining one-thousand fold.  Pool mine with the command 'pool mine'.  Select a different pool with 'pool select http://...'.  Keep in mind that this update will migrate all vault data to a new and improved version so be sure to back up your private keys.  1.5.20 fixes bugs with solo mining and adds 'test mine' command.
-
-### Official Releases Downloads
-
-[Download Packaged Releases](https://github.com/0xbitcoin/0xbitcoin-miner/blob/master/RELEASES.md)
-
-
+**Different Part**
+Getting Started
+1. Build a new mining account with 'account new'
+2. View the private key with 'account list'
+3. Write down these credentials
+4. Fund the account to send mining transaction
+5. contract select {moon-miner mining contract address}
+6. config web3provider https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy:8545
+7. mine
 
 ### Building from Source
 
@@ -32,7 +30,6 @@ This new build uses the C++ addon to accelerate the CPU mining one-thousand fold
 4. Open a terminal, cd into the project folder and run 'yarn'
 5. Run the command 'npm run build' to build C files with node-gyp
 6. Start the miner with 'node index.js'
-
 
 
 ### Commands
